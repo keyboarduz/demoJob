@@ -1,0 +1,30 @@
+{
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.1.0",
+    "aura/router": "^3.1",
+    "jasongrimes/paginator": "~1.0",
+    "laminas/laminas-diactoros": "^2.2",
+    "laminas/laminas-httphandlerrunner": "^1.1",
+    "laminas/laminas-stratigility": "^3.2",
+    "psr/http-message": "^1.0",
+    "psr/http-server-middleware": "^1.0",
+    "respect/validation": "^1.1",
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "src/Framework",
+      "App\\": "src/App"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t public",
+    "test": "phpunit --colors=always"
+  }
+}
