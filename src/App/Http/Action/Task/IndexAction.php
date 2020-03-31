@@ -33,7 +33,7 @@ class IndexAction
         $countTask = $taskModel->getCountTask();
 
         $totalItems = $countTask;
-        $itemsPerPage = 2;
+        $itemsPerPage = 3;
         $currentPage = $page;
         $urlPattern = '/?page=(:num)';
         if ($sortAttribute !== null) {
